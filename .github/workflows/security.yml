@@ -32,10 +32,33 @@ jobs:
       # schedule is what catches an advisory published against dependencies
       # that never changed, which is how 19 of them accumulated here unseen.
       #
-      # This also guards the scoped `node-gyp/undici` resolution in
-      # package.json. Yarn's parent/child resolutions only bind when the
-      # child is a direct dependency of the parent, and when they stop
-      # matching they are ignored silently: install still exits 0. Without
-      # this job, a dropped pin looks exactly like a passing build.
+      # This also guards the scoped `node-gyp/undici` and the three
+      # `brace-expansion@<range>` resolutions in package.json. Yarn's
+      # parent/child and ranged resolutions only bind when the descriptor
+      # still matches, and when they stop matching they are ignored
+      # silently: install still exits 0. Without this job, a dropped pin
+      # looks exactly like a passing build.
+      #
+      # The one ignore is GHSA-mh99-v99m-4gvg, the brace-expansion
+      # unbounded-expansion OOM. It is the only advisory in this tree with
+      # no patched release: it affects <=5.0.7 across every major, so the
+      # 1.x and 2.x lines are unfixable by a version bump, and 5.0.8 cannot
+      # be forced onto them because v5 renamed the CommonJS entry from a
+      # default export to a named `expand`, so `require(...)(pattern)`
+      # throws. The 5.x tree in this repo IS pinned to 5.0.8 and is clean.
+      #
+      # Every remaining 1.x/2.x path is the lint toolchain -- eslint 8 (via
+      # @eslint/eslintrc, @humanwhocodes/config-array, and flat-cache ->
+      # rimraf 3 -> glob 7) and @typescript-eslint 7 (via
+      # typescript-estree). Both are devDependencies, so this never reaches
+      # the shipped artifact, and the expansion patterns are the repo's own
+      # lint globs, not untrusted input.
+      #
+      # Deleting this ignore means eslint 8 -> 10 and @typescript-eslint
+      # 7 -> 8.65, which move minimatch to ^10 and pull brace-expansion 5.
+      # That is a flat-config migration owed its own PR.
+      #
+      # This is an advisory ID, not a package glob: a NEW brace-expansion
+      # advisory carries a new ID and will still fail this job.
       - name: Audit for high/critical vulnerabilities
-        run: yarn npm audit --all --recursive --severity high
+        run: yarn npm audit --all --recursive --severity high --ignore 1124334

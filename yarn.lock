@@ -345,9 +345,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/compiler-cli@npm:^21.2.18":
-  version: 21.2.18
-  resolution: "@angular/compiler-cli@npm:21.2.18"
+"@angular/compiler-cli@npm:^21.2.19":
+  version: 21.2.19
+  resolution: "@angular/compiler-cli@npm:21.2.19"
   dependencies:
     "@babel/core": "npm:7.29.7"
     "@jridgewell/sourcemap-codec": "npm:^1.4.14"
@@ -358,7 +358,7 @@ __metadata:
     tslib: "npm:^2.3.0"
     yargs: "npm:^18.0.0"
   peerDependencies:
-    "@angular/compiler": 21.2.18
+    "@angular/compiler": 21.2.19
     typescript: ">=5.9 <6.1"
   peerDependenciesMeta:
     typescript:
@@ -366,7 +366,7 @@ __metadata:
   bin:
     ng-xi18n: bundles/src/bin/ng_xi18n.js
     ngc: bundles/src/bin/ngc.js
-  checksum: 10c0/82ca22f37dca39d5f076fd1f9a0aa79535735f28112a5496b57154441c2da3c347c98ac678855fd9e4c4374f13471ca768180f1d719f15a3711488c8ff552a5b
+  checksum: 10c0/5e39d785c4e32601199be2d33989870ddaf39e82f6ca437a9eee31061f6eade13b91e08b2dd299fa3a05005e4f44da87785ad5658564678227ca71e2973362a6
   languageName: node
   linkType: hard
 
@@ -2123,7 +2123,7 @@ __metadata:
     "@angular/cli": "npm:^21.2.18"
     "@angular/common": "npm:^21.2.18"
     "@angular/compiler": "npm:^21.2.18"
-    "@angular/compiler-cli": "npm:^21.2.18"
+    "@angular/compiler-cli": "npm:^21.2.19"
     "@angular/core": "npm:^21.2.18"
     "@angular/forms": "npm:^21.2.18"
     "@angular/platform-browser": "npm:^21.2.18"
@@ -5882,12 +5882,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.9.5":
-  version: 3.9.5
-  resolution: "prettier@npm:3.9.5"
+"prettier@npm:^3.9.6":
+  version: 3.9.6
+  resolution: "prettier@npm:3.9.6"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10c0/0349dd9e6d8010965de6f69e6b6ee2484b8caf78c66675afced6c75ad60ff24c3a2a4f41153fb8adeaee4d8f539641b48cebc71d283cec4d146e9962126c5ceb
+  checksum: 10c0/9f7ddae234035868f3daab3dc34e6de7e54622185afb017378029f0c09a9c023248ccf6f34def0b17a0538e18c47aa1b3188bab72965d1bf735919baa0747e99
   languageName: node
   linkType: hard
 
@@ -6008,7 +6008,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:^7.8.0"
     eslint: "npm:^8.57.0"
     eslint-config-prettier: "npm:^9.1.0"
-    prettier: "npm:^3.9.5"
+    prettier: "npm:^3.9.6"
     typescript: "npm:^5.4.5"
     vitest: "npm:^3.2.7"
   languageName: unknown

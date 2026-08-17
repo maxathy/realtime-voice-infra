@@ -333,15 +333,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/common@npm:^21.2.19":
-  version: 21.2.19
-  resolution: "@angular/common@npm:21.2.19"
+"@angular/common@npm:^21.2.20":
+  version: 21.2.20
+  resolution: "@angular/common@npm:21.2.20"
   dependencies:
     tslib: "npm:^2.3.0"
   peerDependencies:
-    "@angular/core": 21.2.19
+    "@angular/core": 21.2.20
     rxjs: ^6.5.3 || ^7.4.0
-  checksum: 10c0/e7e562b647ed36fd048e174ef1073d913e92810ab6581b45ce9332201fe38952d87186ff6e73ba1a0e76008aad5c41270a109713742a8769a235e3122104e43b
+  checksum: 10c0/402065fef44b9dcd6eae5a6042b3b7f9cf4db6cb9a5fb6e9e9bf3e3dd4560ffee75d42d789b7fcd1c6ba2711f24c4f1d53e59b644e9289cc47135da221938e04
   languageName: node
   linkType: hard
 
@@ -370,22 +370,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/compiler@npm:^21.2.19":
-  version: 21.2.19
-  resolution: "@angular/compiler@npm:21.2.19"
+"@angular/compiler@npm:^21.2.20":
+  version: 21.2.20
+  resolution: "@angular/compiler@npm:21.2.20"
   dependencies:
     tslib: "npm:^2.3.0"
-  checksum: 10c0/ae3993ed73a4731e1ccd84518fc20520273e6afd38cc040af0ef423c0b60d57fd4a72dbfb955009e6bb67a4119cd118d2fc82486e0b17924ce7f35ce0037da2f
+  checksum: 10c0/5c1ea9f3a43420897d7373b9701b78889f85c98f8397476ece105295b50ea01a41342ea9df2aae1190919c33cb428853acfbe217c856cb098f051b45aa877a0f
   languageName: node
   linkType: hard
 
-"@angular/core@npm:^21.2.19":
-  version: 21.2.19
-  resolution: "@angular/core@npm:21.2.19"
+"@angular/core@npm:^21.2.20":
+  version: 21.2.20
+  resolution: "@angular/core@npm:21.2.20"
   dependencies:
     tslib: "npm:^2.3.0"
   peerDependencies:
-    "@angular/compiler": 21.2.19
+    "@angular/compiler": 21.2.20
     rxjs: ^6.5.3 || ^7.4.0
     zone.js: ~0.15.0 || ~0.16.0
   peerDependenciesMeta:
@@ -393,22 +393,22 @@ __metadata:
       optional: true
     zone.js:
       optional: true
-  checksum: 10c0/a060ee271acb93b5a633e5ab66bdf8fc6d13d17782b25d381ec51c5d664778de740d661b17ea36175a15d286422ad96760c1c0accf8b44a1ad6175d38869a7fd
+  checksum: 10c0/8827cc0b8a8cc1beebed43244fce103259776dfe68dd0755d04bcd7fc2b76e1eecdfdad33798dfeb4a5825f93746525f2901e9aa1a401d27e7a4189db5fd4a54
   languageName: node
   linkType: hard
 
-"@angular/forms@npm:^21.2.19":
-  version: 21.2.19
-  resolution: "@angular/forms@npm:21.2.19"
+"@angular/forms@npm:^21.2.20":
+  version: 21.2.20
+  resolution: "@angular/forms@npm:21.2.20"
   dependencies:
     "@standard-schema/spec": "npm:^1.0.0"
     tslib: "npm:^2.3.0"
   peerDependencies:
-    "@angular/common": 21.2.19
-    "@angular/core": 21.2.19
-    "@angular/platform-browser": 21.2.19
+    "@angular/common": 21.2.20
+    "@angular/core": 21.2.20
+    "@angular/platform-browser": 21.2.20
     rxjs: ^6.5.3 || ^7.4.0
-  checksum: 10c0/719c834c7e678567901161403990eebc0f7a5420065a740efb988b4a2955dfb49f8ec8e39c3db43efb0d0e699b55b0c7c1e38a3c9cfbbc43cb367d583deaaa15
+  checksum: 10c0/13a9ad6713a1c15e01a751670776bce8f9f22e468d9b4ce84e97acb8c6b6262a0575d00e02ab32eb8703ee678a9d70e3600f24724733bf8693fd1d8dc3cbd74f
   languageName: node
   linkType: hard
 
@@ -426,19 +426,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/platform-browser@npm:^21.2.19":
-  version: 21.2.19
-  resolution: "@angular/platform-browser@npm:21.2.19"
+"@angular/platform-browser@npm:^21.2.20":
+  version: 21.2.20
+  resolution: "@angular/platform-browser@npm:21.2.20"
   dependencies:
     tslib: "npm:^2.3.0"
   peerDependencies:
-    "@angular/animations": 21.2.19
-    "@angular/common": 21.2.19
-    "@angular/core": 21.2.19
+    "@angular/animations": 21.2.20
+    "@angular/common": 21.2.20
+    "@angular/core": 21.2.20
   peerDependenciesMeta:
     "@angular/animations":
       optional: true
-  checksum: 10c0/9e2e1ce83bde06e826d5566b0c74eb2d629552aafd8b603475ed342784f8c2a9659109e4283be2094c6822ee1eecda66198c9fcd8829699cd2de9751d65ac152
+  checksum: 10c0/ea5bacea62e715ae1d7e75d6738a98b0984a205cd44fe3e9ca3aacd75998ce0e4379f826ddc9ae8f42b98827857ee6522ac47aebc9fa62cc46aa54046ce204f7
   languageName: node
   linkType: hard
 
@@ -2102,7 +2102,7 @@ __metadata:
     "@realtime-voice-infra/session-core": "workspace:*"
     "@realtime-voice-infra/shared-types": "workspace:*"
     "@types/node": "npm:^20.19.43"
-    fastify: "npm:^5.11.0"
+    fastify: "npm:^5.12.0"
     ioredis: "npm:^5.11.1"
     pino: "npm:^9.1.0"
     socket.io: "npm:^4.7.5"
@@ -2121,12 +2121,12 @@ __metadata:
     "@angular/animations": "npm:^21.2.19"
     "@angular/build": "npm:^21.2.20"
     "@angular/cli": "npm:^21.2.20"
-    "@angular/common": "npm:^21.2.19"
-    "@angular/compiler": "npm:^21.2.19"
+    "@angular/common": "npm:^21.2.20"
+    "@angular/compiler": "npm:^21.2.20"
     "@angular/compiler-cli": "npm:^21.2.19"
-    "@angular/core": "npm:^21.2.19"
-    "@angular/forms": "npm:^21.2.19"
-    "@angular/platform-browser": "npm:^21.2.19"
+    "@angular/core": "npm:^21.2.20"
+    "@angular/forms": "npm:^21.2.20"
+    "@angular/platform-browser": "npm:^21.2.20"
     "@angular/platform-browser-dynamic": "npm:^21.2.19"
     "@realtime-voice-infra/audio-codec": "workspace:*"
     "@realtime-voice-infra/session-core": "workspace:*"
@@ -4138,9 +4138,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fastify@npm:^5.11.0":
-  version: 5.11.0
-  resolution: "fastify@npm:5.11.0"
+"fastify@npm:^5.12.0":
+  version: 5.12.0
+  resolution: "fastify@npm:5.12.0"
   dependencies:
     "@fastify/ajv-compiler": "npm:^4.0.5"
     "@fastify/error": "npm:^4.0.0"
@@ -4152,12 +4152,12 @@ __metadata:
     find-my-way: "npm:^9.6.0"
     light-my-request: "npm:^6.0.0"
     pino: "npm:^9.14.0 || ^10.1.0"
-    process-warning: "npm:^5.0.0"
+    process-warning: "npm:^5.1.0"
     rfdc: "npm:^1.3.1"
     secure-json-parse: "npm:^4.0.0"
     semver: "npm:^7.6.0"
     toad-cache: "npm:^3.7.0"
-  checksum: 10c0/baca681a07272e7483ab453d4ef4df645c7512ac74162ef25190bb6e303ba115d009a349dd242a86d2cf8f931334bd31e89bb4e8f12a25d453076829cf149d27
+  checksum: 10c0/abc39c7a630b923fc2e1eb2cdbe279aa6bbb02033d35a62c3388285b66d9395727a2ff7c0cb6f9992d435aae3c34dea74d92bacfa33bb15261f5536aeaeefe51
   languageName: node
   linkType: hard
 
@@ -5902,6 +5902,13 @@ __metadata:
   version: 5.0.0
   resolution: "process-warning@npm:5.0.0"
   checksum: 10c0/941f48863d368ec161e0b5890ba0c6af94170078f3d6b5e915c19b36fb59edb0dc2f8e834d25e0d375a8bf368a49d490f080508842168832b93489d17843ec29
+  languageName: node
+  linkType: hard
+
+"process-warning@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "process-warning@npm:5.1.0"
+  checksum: 10c0/2a48d48b575f4e7888fd4735a6604acd89914efa909f3db5dd20ae56e8a8cdd3c32a3c738bba539b46d1c5096630e15286bcb7c7fca18dfbf04cc7d00fe34a0f
   languageName: node
   linkType: hard
 
